@@ -47,7 +47,7 @@ A Resume Category Prediction App that automates the process of evaluating and fi
 4. **Review Results:** View categorized resumes with scores and insights.
 
 ## Directory Structure
-```
+
 
 
 ## Contributing
