@@ -1,71 +1,69 @@
-Overview:
-This project is a web application built with Streamlit that allows users to upload their resumes in PDF, DOCX, or TXT formats and automatically predicts the job category they belong to. It leverages natural language processing (NLP) techniques, including text cleaning, TF-IDF vectorization, and machine learning classifiers trained on categorized resume data.
+# SmartResumeCategorizer
 
-Features
-Upload resumes in PDF, DOCX, or TXT formats.
-Extracts and displays the resume text.
-Performs text preprocessing and cleaning.
-Predicts the category/job sector of the resume using a trained classifier.
-Easy-to-use interface with a clean layout.
-Supports multiple classifiers (KNN, SVC, Random Forest) trained on resume datasets.
-Fully customizable and extendable for other models or features.
-Demo
-Screenshot of app <!-- Optional: Add a screenshot here -->
+## Overview
+A Resume Category Prediction App that automates the process of evaluating and filtering resumes based on predefined criteria. This application utilizes machine learning and natural language processing (NLP) to extract, analyze, and score candidate information, helping recruiters identify the most relevant profiles efficiently.
 
-Installation
-Requirements
-Python 3.8+
-Streamlit
-pandas
-numpy
-scikit-learn
-PyPDF2
-python-docx
-matplotlib
-seaborn
-Setup
-Clone the repository:
-bash
-git clone https://github.com/yourusername/resume-category-prediction.git
-cd resume-category-prediction
-Create a virtual environment (optional but recommended):
-bash
-python -m venv venv
-source venv/bin/activate    # On Windows: venv\Scripts\activate
-Install dependencies:
-bash
-pip install -r requirements.txt
-Make sure you have the pre-trained model files (clf_Final.pkl, tfidf_Final.pkl, encoder_Final.pkl) in the project directory.
-Usage
-Run the Streamlit app:
+## Features
+- **Resume Parsing:** Automatically extracts key information such as skills, experience, and qualifications from resumes.
+- **Category Prediction:** Classifies resumes into predefined categories based on job roles or industries.
+- **Customizable Criteria:** Allows recruiters to define specific evaluation criteria for better matching.
+- **Efficient Screening:** Streamlines the recruitment process by prioritizing relevant profiles.
+- **User-Friendly Interface:** Simplifies interaction for non-technical users.
 
-bash
-streamlit run app.py
-Open your browser and go to the URL provided by Streamlit (usually http://localhost:8501).
+## Technologies Used
+- **Streamlit:** For building an interactive web interface.
+- **Python:** Core language for development.
+- **Machine Learning:** Implements models for category prediction.
+- **Natural Language Processing (NLP):** Powers resume parsing and analysis.
+- **GitHub:** Version control and collaboration.
 
-Upload a resume in PDF, DOCX, or TXT format, and the app will display the extracted text and predict the category automatically.
+## Installation
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/ResumeClassifierAI.git
+   
+   ```
 
-Files and Structure
-app.py: Main Streamlit app for user interaction.
-Pre-trained models:
-clf_Final.pkl: The trained classifier model.
-tfidf_Final.pkl: The TF-IDF vectorizer.
-encoder_Final.pkl: Label encoder for categories.
-Additional scripts/functions for text extraction and cleaning.
-Dataset (UpdatedResumeDataSet.csv) used for training.
-Notebook
-Model.ipynb: Jupyter notebook demonstrating data analysis, feature engineering, model training, and evaluation.
-Technologies Used
-Python
-Streamlit
-scikit-learn
-pandas
-NumPy
-matplotlib & seaborn
-PyPDF2
-python-docx
-Contributing
-Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
+2. **Set Up Virtual Environment:**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # On Windows: venv\Scripts\activate
+   ```
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+3. **Install Dependencies:**
+   ```bash
+  
+   ```
+
+4. **Run the Application:**
+   ```bash
+   streamlit run app.py
+   ```
+
+## Usage
+1. **Upload Resumes:** Upload resumes in supported formats (PDF, DOCX, etc.).
+2. **Set Criteria:** Define evaluation criteria or select predefined categories.
+3. **Run Prediction:** The system categorizes resumes and ranks candidates based on relevance.
+4. **Review Results:** View categorized resumes with scores and insights.
+
+## Directory Structure
+```
+
+
+## Contributing
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Create a pull request.
+
+## License
+
+
+## Acknowledgments
+- Inspired by the need for efficient recruitment tools.
+- Thanks to the open-source NLP and ML communities for their valuable resources.
+
+## Contact
+For questions, suggestions, or collaboration opportunities, please reach out at https://www.linkedin.com/in/ishan-peshkar/.
