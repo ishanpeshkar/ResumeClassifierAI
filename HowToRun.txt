@@ -1,0 +1,8 @@
+
+
+Activate venv -     .\.venv\Scripts\activate
+Go to folder  -     cd ResumeCategoryPrediction
+Run -               streamlit run app3.py
+
+
+Youtube Link - https://www.youtube.com/watch?v=hG8K5h2J-5g&t=1560s
